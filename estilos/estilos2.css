@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/****************** MENU PRINCIPAL ******************/
+
+#menu_superior{
+    border-bottom: 2px black solid;
+}
+
+#navegador ul li a{
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+#lista_mapa a button{
+    border-radius: 5px;
+    padding: 0.1em;
+}
+
+#buscador button, #buscador input{
+    border-radius: 5px;
+    padding: 0.1em;
+}
+
+#menu_superior{
+    height: 15vh;
+    background-color: #2DC2BD;
+}
+
+#navegador ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navegador ul li a{
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#navegador{
+    height: 100%;
+}
+
+#principal{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header{   
+    position: absolute;
+    z-index: 1;
+    left: 41.5%;
+    top: 45%;
+}
+
+
+/******** CALCULAR VIAJE **********/
+#principal_ver{
+    height: 80vh;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+}
+
+#izquierda{
+    height: 100%;
+    width: 80%;
+}
+
+#form_calc_viaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#form_calc_viaje_fila2{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+#form_calc_viaje1, #form_calc_viaje2, #form_calc_viaje3{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#form_calc_viaje3 button{
+    border-radius: 15px;
+}
+
+#enviar_calc_viaje{
+    height: 3em;
+}
+
+#tabla_viaje tr td{
+    border: 1px solid black;
+}
+
+#img_ver_mapa{
+    width: 100%;
+    height: 80%;
+}
+
+#img_mapa{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#info_viaje{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+#info_viaje table tr td{
+    text-align: center;
+    padding: 0.2em;
+}
+
+.tftable {height: 1em;font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+.tftable tr {background-color:#ffffff;}
+.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+.tftable tr:hover {background-color:#ffff99;}
+
+
+
+/******** MAIN TABLA **********/
+
+#gasolineras{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecera{
+    cursor: pointer; 
+    user-select: none;
+}
+
+#gif{   
+    position: absolute;
+    z-index: 1;
+    left: 41.5%;
+    top: 45%;
+}
+
+/******** MIS COCHES **********/
+
+#addCoche{
+    display: flex;
+    width: 100%;
+    height: 5em;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#addCoche a {
+    width: 12em;
+    height: 5em;
+}
+
+#addCoche a button{
+    font-size: x-large;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+
+#coches{
+    font-size: x-large;
+    text-align:center;
+}
+
+#coches2{
+    font-size: large;
+}
+
+#coches2 button{
+    padding: 0.3em;
+    border-radius: 15px;
+}
+
+
+/******** MIS GASOLINERAS **********/
+
+#tablaGasolineras tr td button{
+    border-radius: 15px;
+    padding: 0.2em;
+}
+
+/******** GUARDAR/EDITAR/BORRAR COCHE **********/
+
+#saveForm{
+    border-radius: 15px;
+    padding: 0.2em;
+}
+
+#botonGuardar{
+    margin-top: 0.5em;
+}
+
+#borrar{
+    border-radius: 15px;
+    padding: 0.2em;
+}
+
+#borrarCoche{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/******** MAPA **********/
+
+#map{
+    width: 100%;
+    height: 600px;
+    background: grey;
+}
+
+#panel {
+    width: 100%;
+    height: 600px;
+}
+
+
+/******** TIPOS DE VISTA **********/
+
+/*Movil*/
+@media (max-width: 575px) {
+    #menu_superior{
+        height: 30vh;
+    }
+
+    #principal{
+        height: 70vh;
+    }
+
+    #navegador ul{
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    #principal_ver{
+        flex-direction: column;
+        height: 1100px;
+    }
+
+    #seleccionar_gasolinera, #seleccionar_coche{
+        font-size: x-small;
+    }
+
+    #izquierda{
+        width: 100%;
+        height: 70%;
+    }
+
+    .mapa{
+        height: 30%;
+    }
+
+    #tabla_coches tr td, #tabla_coches tr td a{
+        font-size: 12px;
+    }
+
+    #tabla_coches tr td img{
+        width: 90px;
+        height: 80px;
+    }
+
+    #form_calc_viaje2, #form_calc_viaje2{
+        width: 45%;
+    }
+}

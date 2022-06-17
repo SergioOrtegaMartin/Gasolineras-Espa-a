@@ -1,0 +1,14 @@
+
+.H_ib_content {
+  min-width: 15em;
+  font: 14px "Lucida Grande", Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  margin: 16px 28px 20px 16px;
+  color: rgba(15,22,33,.8);
+  user-select: text;
+  -moz-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -o-user-select: text;
+  -ms-user-select: text;
+}
